@@ -1,0 +1,6 @@
+{
+  "name": "WAKISSHA - 25 Years of Academic Excellence",
+  "description": "Official commemorative portal of the Wakiso Secondary Schools Headteachers Association (WAKISSHA) celebrating 25 years (Silver Jubilee) of educational leadership and academic excellence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
