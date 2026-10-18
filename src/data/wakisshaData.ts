@@ -125,7 +125,6 @@ export const MEMBER_SCHOOLS: ZoneSchool[] = [
     type: 'Government Aided',
     category: 'Mixed Boarding',
     established: '1906',
-    headteacher: 'Mr. John Fred Kazibwe',
     motto: 'Gaba Shenzi (Strive to Excel)'
   },
   {
@@ -134,7 +133,6 @@ export const MEMBER_SCHOOLS: ZoneSchool[] = [
     type: 'Government Aided',
     category: 'Boys Boarding',
     established: '1906',
-    headteacher: 'Bro. Simon Mpanga',
     motto: 'Semper Sublimis'
   },
   {
@@ -143,7 +141,6 @@ export const MEMBER_SCHOOLS: ZoneSchool[] = [
     type: 'Government Aided',
     category: 'Girls Boarding',
     established: '1905',
-    headteacher: 'Mrs. Robinah Kizito Katongole',
     motto: 'Never Give Up'
   },
   {
@@ -152,7 +149,6 @@ export const MEMBER_SCHOOLS: ZoneSchool[] = [
     type: 'Government Aided',
     category: 'Mixed Boarding',
     established: '1967',
-    headteacher: 'Rev. Fr. Henry Ssenyondo',
     motto: 'Per Laborem Ad Honorem'
   },
   {
@@ -234,6 +230,54 @@ export const MEMBER_SCHOOLS: ZoneSchool[] = [
     category: 'Day & Boarding',
     established: '1986',
     motto: 'Knowledge and Virtue'
+  },
+  {
+    name: 'Boston High School Entebbe',
+    zone: 'entebbe',
+    type: 'Private',
+    category: 'Mixed Boarding',
+    established: '2000',
+    motto: 'Aiming at Greater Horizons'
+  },
+  {
+    name: 'Air Force Senior Secondary School Entebbe',
+    zone: 'entebbe',
+    type: 'Government Aided',
+    category: 'Day & Boarding',
+    established: '1989',
+    motto: 'Soar High for Knowledge'
+  },
+  {
+    name: 'Kakiri Secondary School',
+    zone: 'busiro',
+    type: 'Government Aided',
+    category: 'Day & Boarding',
+    established: '1984',
+    motto: 'Education for Service'
+  },
+  {
+    name: "St. Joseph's Secondary School Naggalabi",
+    zone: 'kyadondo',
+    type: 'Government Aided',
+    category: 'Day & Boarding',
+    established: '1982',
+    motto: 'Labor Omnia Vincit'
+  },
+  {
+    name: "St. Peter's Senior Secondary School Naalya",
+    zone: 'kira',
+    type: 'Private',
+    category: 'Mixed Boarding',
+    established: '1995',
+    motto: 'Faith and Diligence'
+  },
+  {
+    name: 'Nansana Secondary School',
+    zone: 'nansana',
+    type: 'Government Aided',
+    category: 'Day & Boarding',
+    established: '1983',
+    motto: 'Knowledge is the Light'
   }
 ];
 
@@ -252,38 +296,54 @@ export const EXECUTIVE_SECRETARY = {
   name: 'Hajji Ndugwa Badru Musoke',
   role: 'Executive Secretary, WAKISSHA',
   institution: 'WAKISSHA Secretariat, Wakiso',
-  bio: 'Chief Executive Officer of the WAKISSHA Secretariat. Leads the operational administration, zonal coordination, headteachers welfare schemes, and official association communications.'
+  bio: 'Chief Executive Officer of the WAKISSHA Secretariat. Leads operational administration, zonal coordination, headteachers welfare schemes, and official association communications across all 6 educational zones.'
+};
+
+export const TREASURER = {
+  name: 'Mr. Lwembawo Hussein',
+  role: 'Treasurer, WAKISSHA Executive Committee',
+  institution: 'WAKISSHA Executive Committee, Wakiso',
+  bio: 'Oversees financial governance, budgeting, zonal contributions, joint mock assessment funding, resource mobilization, and fiscal stewardship of the Association.'
 };
 
 export const PAST_CHAIRPERSONS = [
   {
     id: 'mande',
-    name: 'Canon Ruth Mande',
+    name: 'Canon Ruth Mande Muyinda',
     role: 'Immediate Past Chairperson, WAKISSHA',
     formerSchool: 'Former Headteacher, Entebbe Senior Secondary School',
-    tenure: 'Immediate Past Chairperson',
+    tenure: 'Immediate Past Chairperson (2019 — 2022)',
     succeededBy: 'Mrs. Nassozi Immaculate Lwanga',
-    precededBy: 'Owek. Nakate Chotilda Kikomeko',
+    precededBy: 'Owek. Cotilda Nakate Kikomeko',
     message: 'Watching WAKISSHA reach its 25th Silver Jubilee milestone brings profound joy to my heart. When we led this great association, our continuous mission was strengthening the brotherhood and sisterhood of headteachers, advancing academic rigor, and mentoring the youth with unyielding values. Congratulations to Chairperson Mrs. Nassozi Immaculate Lwanga and the entire fraternity as we celebrate 25 years of academic excellence!',
     quote: 'Leadership in secondary education is about lifting others, building lasting structures, and maintaining excellence in character and scholarship.'
   },
   {
     id: 'kikomeko',
-    name: 'Owek. Nakate Chotilda Kikomeko',
+    name: 'Owek. Cotilda Nakate Kikomeko',
     role: 'Former Chairperson, WAKISSHA',
     formerSchool: 'Former Headteacher, Trinity College Nabbingo',
     tenure: 'Former Chairperson',
-    bio: 'Visionary educationist and former Headteacher of Trinity College Nabbingo. Spearheaded the institutional formalization of WAKISSHA, girls’ education advocacy, and structured zonal administration across Wakiso.',
+    bio: 'Visionary educationist, Buganda Kingdom Minister, and former Headteacher of Trinity College Nabbingo. Spearheaded the institutional formalization of WAKISSHA, girl-child education advocacy, and structured zonal administration across Wakiso District.',
     quote: 'A headteacher’s calling is to sow seeds of knowledge and integrity that blossom for generations.'
   },
   {
     id: 'senyonjo',
-    name: 'Mr. Moses Ssenyonjo',
+    name: 'Mr. Moses Senyonjo',
     role: 'Former Chairperson, WAKISSHA',
-    formerSchool: 'Proprietor & Former Headteacher, St. Mary’s College Lugazi (former Headteacher, Naalya SS)',
+    formerSchool: 'Founding Headteacher, Naalya SS Namugongo & Director, St. Mary’s College Lugazi',
     tenure: 'Former Chairperson',
-    bio: 'Foundational secondary school administrator who championed association cohesion, academic benchmarking standards, and institutional resilience across public and private secondary schools in Wakiso.',
+    bio: 'Pioneering secondary school administrator who championed association cohesion, academic benchmarking standards, and institutional resilience across public and private secondary schools in Wakiso.',
     quote: 'WAKISSHA was founded on the belief that collective wisdom and mutual support among school heads elevates the entire nation.'
+  },
+  {
+    id: 'laboke',
+    name: 'Mrs. Regina Laboke',
+    role: 'Former Chairperson, WAKISSHA',
+    formerSchool: 'Former Headmistress & Senior Educationist',
+    tenure: 'Former Chairperson',
+    bio: 'Respected pioneer educationist and former WAKISSHA Chairperson who championed discipline, holistic academic empowerment, and pedagogical solidarity among secondary school heads in Wakiso District.',
+    quote: 'True educational stewardship requires compassion, unbending standards of discipline, and continuous investment in both teachers and learners.'
   }
 ];
 

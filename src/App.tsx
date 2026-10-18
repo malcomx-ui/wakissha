@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { MilestoneTimeline } from './components/MilestoneTimeline';
+import { LeadershipSection } from './components/LeadershipSection';
+import { ResourceCentreSection } from './components/ResourceCentreSection';
 import { ZonesDirectory } from './components/ZonesDirectory';
 import { JubileeEvents } from './components/JubileeEvents';
-import { LeadershipSection } from './components/LeadershipSection';
 import { TributeGuestbook } from './components/TributeGuestbook';
 import { Footer } from './components/Footer';
 import { JoinUsModal } from './components/JoinUsModal';
@@ -28,31 +29,34 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b1325] text-slate-100 flex flex-col font-sans selection:bg-amber-500/30 selection:text-amber-200">
+    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans selection:bg-blue-100 selection:text-blue-900">
       {/* Top Bar Navigation */}
       <Navbar onJoinUs={handleOpenJoinUs} />
 
-      {/* Main Content Sections - Celebrations Focus */}
+      {/* Main Content Sections - Light Institutional Theme */}
       <main className="flex-1">
-        {/* Hero Section with Official WAKISSHA Logo & 25-Year Celebrations */}
+        {/* Hero Section with Official WAKISSHA Logo & 25-Year Silver Jubilee */}
         <Hero 
           onJoinUs={handleOpenJoinUs} 
           onExploreMilestones={handleScrollToMilestones} 
         />
 
-        {/* 25-Year Historical Journey & Silver Jubilee Milestones (2001 - 2026) */}
+        {/* 1. Institutional Record Block: 25-Year Historical Journey (2001 - 2026) */}
         <MilestoneTimeline />
 
-        {/* 6 Zones & Member Secondary Schools Directory Celebrating Unity */}
-        <ZonesDirectory />
-
-        {/* Official Main Silver Jubilee Celebration (Today · 16 Oct 2026) */}
-        <JubileeEvents onJoinEvent={handleOpenJoinUs} />
-
-        {/* Leadership Executive Committee & 25-Year Testimonials */}
+        {/* 2. Association Governance Block (Directly below Institutional Record Block as requested) */}
         <LeadershipSection />
 
-        {/* Interactive Commemorative Tribute Guestbook */}
+        {/* 3. WAKISSHA Resource Centre & Sports Grounds (Headquarters & Sports Pavilion) */}
+        <ResourceCentreSection />
+
+        {/* 4. 6 Zones & Member Secondary Schools Directory */}
+        <ZonesDirectory />
+
+        {/* 5. Official Silver Jubilee Grand Celebrations & Program */}
+        <JubileeEvents onJoinEvent={handleOpenJoinUs} />
+
+        {/* 6. Interactive Commemorative Tribute Guestbook */}
         <TributeGuestbook />
       </main>
 
